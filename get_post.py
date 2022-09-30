@@ -1,18 +1,18 @@
 # GET-request
 
-# from urllib import request
+from urllib import request
 
-# myUrl = "sms.becloud.by"
+myUrl = "sms.becloud.by"
 
-# answer = request.urlopen(myUrl)
-# mytext1 = answer.realines()
-# mytext2 = answer.read()
+answer = request.urlopen(myUrl)
+mytext1 = answer.realines()
+mytext2 = answer.read()
 
-# print(answer)
-# print(mytext2)
+print(answer)
+print(mytext2)
 
-# for line in mytext1:
-#     print(line)
+for line in mytext1:
+     print(line)
 
 # POST-request
 
