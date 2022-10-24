@@ -31,7 +31,7 @@ try:
     print(mydata)
     myUrl = myUrl + mydata
     req = request.Request(myUrl, headers=myheader)
-    otvet = request.urlopen(req)
+    reply = request.urlopen(req)
     answer = request.urlopen(req)
     answer = answer.readlines()
     for line in answer:
