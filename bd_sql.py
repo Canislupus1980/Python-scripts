@@ -1,6 +1,6 @@
 import pypyodbc
 
-mySQLServer = "\\fs01\Отделы\Управление ИТ и РП\ОРСИРП\Группа эксплуатации сетевой инфраструктуры офиса\ITInvent.mdb"
+mySQLServer = ""
 myDatabase  = "COMPANY"
 connection  = pypyodbc.connect('Driver={SQL Server};'
                               'Server=' + mySQLServer + ';'
