@@ -2,7 +2,7 @@
 
 from urllib import request
 
-myUrl = "sms.becloud.by"
+myUrl = ""
 
 answer = request.urlopen(myUrl)
 mytext1 = answer.realines()
@@ -20,7 +20,7 @@ from urllib import request, parse
 import sys
 
 myUrl = "https://www.google.com/search?"
-value = {'q': 'becloud'}
+value = {'q': ''}
 
 myheader = {}
 myheader['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
