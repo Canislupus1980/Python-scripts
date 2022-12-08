@@ -1,8 +1,8 @@
 from urllib import request
 import sys
 
-myUrl = "https://becloud.by/upload/medialibrary/99d/yxqpovo4n4spgidn6y19j1zvpc0j6hju/obl_Storage.png"
-myFile = "C:\Users\sergey.buhtiyarov\Pictures\mykartinka.jpg"
+myUrl = ""
+myFile = ""
 
 try:
     print("Start Downloading file from: " + myUrl)
