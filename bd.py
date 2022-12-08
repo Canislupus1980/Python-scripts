@@ -1,3 +1,4 @@
+# Working with databases SQL Server, connection, launch sql query, result
 import pypyodbc
 
 mySQLServer = ""
