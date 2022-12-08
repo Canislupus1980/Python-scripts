@@ -1,3 +1,4 @@
+#Binary Search
 def binarysearch(mylist, search, start, stop):
     if start > stop:
         return False
