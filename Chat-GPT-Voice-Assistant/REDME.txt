@@ -1,0 +1,9 @@
+cd /mnt/c/Users/Your user/OneDrive/Desktop/Chat-GPT-Voice-Assistant/
+
+pip install SpeechRecognition
+
+pip install openai
+
+pip install pyttsx3
+
+python .\assistant.py
