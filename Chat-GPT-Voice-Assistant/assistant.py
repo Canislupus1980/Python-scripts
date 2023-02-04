@@ -12,7 +12,7 @@ r = sr.Recognizer()
 mic = sr.Microphone(device_index=1)
 
 conversation = ""
-user_name = "Dan"
+user_name = "Seren"
 bot_name = "John"
 
 while True:
