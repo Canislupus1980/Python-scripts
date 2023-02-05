@@ -1,8 +1,9 @@
 import speech_recognition as sr
 import pyttsx3
 import openai
+from api_key import API_KEY
 
-openai.api_key = "Your API Key"
+openai.api_key = API_KEY
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -13,7 +14,7 @@ mic = sr.Microphone(device_index=1)
 
 conversation = ""
 user_name = "Seren"
-bot_name = "John"
+bot_name = "Panam Palmer"
 
 while True:
     with mic as source:
@@ -24,17 +25,18 @@ while True:
 
     try:
         user_input = r.recognize_google(audio)
-    except:
+        print("User input : " + user_input)
+    except Exception as e :
         continue
 
-    prompt = user_name+":"+user_input + "\n"+bot_name+":"
+    prompt = user_name+":" + user_input + "\n" + bot_name+":"
     conversation += prompt
 
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=conversation,
         temperature=0.7,
-        max_tokens=256,
+        max_tokens=300,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
